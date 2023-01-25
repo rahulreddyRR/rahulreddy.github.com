@@ -44,3 +44,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Prettier setup with eslint
+
+install prettier extension
+
+step 1: yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+
+setp 2 : add this two into .eslintrc - extends:['prettier','plugin:prettier/recommended']
