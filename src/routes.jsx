@@ -6,7 +6,7 @@ const Routers = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/rahulreddy.github.com" element={<Homepage />} />
         {/*<Route component={<Redirect redirectUrl="/" />} /> */}
       </Routes>
     </>
