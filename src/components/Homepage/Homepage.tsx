@@ -1,13 +1,14 @@
 import React from 'react';
-// import styles from './Homepage.module.scss';
-import Logo from './logo192.png';
+import { Container, Grid } from '@mui/material';
+import Banner from './Banner/Banner';
 
 const Homepage = () => {
   return (
-    <>
-      <h1>Home page under constraction</h1>
-      <img src={Logo} alt="nothing.." />
-    </>
+    <Container disableGutters={true} maxWidth="xl">
+      <Grid sm={12} md={12} lg={12} xl={12}>
+        <Banner />
+      </Grid>
+    </Container>
   );
 };
 

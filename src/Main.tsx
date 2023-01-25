@@ -1,10 +1,10 @@
 import Routes from './Routes.jsx';
 const Main = () => {
-    return (
-        <>
-            <Routes />
-        </>
-    )
-}
+  return (
+    <>
+      <Routes />
+    </>
+  );
+};
 
 export default Main;
