@@ -1,8 +1,9 @@
-import Routes from './Routes.jsx';
+// import Routes from './Routes.jsx';
+import Homepage from './components/Homepage/Homepage';
 const Main = () => {
   return (
     <>
-      <Routes />
+      <Homepage />
     </>
   );
 };
