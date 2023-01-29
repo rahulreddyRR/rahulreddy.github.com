@@ -1,0 +1,26 @@
+@mixin mobile_devices {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin iPads_devices {
+  @media screen and (min-width: 481px) {
+    @content;
+  }
+}
+@mixin Small_screens_devices {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+@mixin Desktops_devices {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
+@mixin Extra_large__devices {
+  @media screen and (min-width: 1201px) {
+    @content;
+  }
+}
