@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Button, Typography, Grid, Box } from '@mui/material';
+import { Button, Typography, Grid } from '@mui/material';
 import { FC } from 'react';
 import ProfilePic from '../../../assets/Images/ProfilePicture.jpeg';
 import styles from './Profile.module.scss';
@@ -16,7 +16,20 @@ const Profile: FC = () => {
           className={styles.profile__pic}
         />
       </Grid>
-      <Grid item xs={6} sm={8} md={9} lg={9}>
+      <Grid
+        item
+        xs={6}
+        sm={8}
+        md={9}
+        lg={9}
+        sx={{
+          marginTop: {
+            xl: 0,
+            sm: '1rem',
+            md: '2rem',
+          },
+        }}
+      >
         <Grid container>
           <Grid item xs={12} sm={8} md={6} lg={6}>
             <Typography variant="body1">Rahul Yella Reddy</Typography>
