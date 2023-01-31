@@ -1,31 +1,52 @@
 /* eslint-disable react/no-unescaped-entities */
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { Button } from '@mui/material';
-import React from 'react';
+import { Button, Typography, Grid, Box } from '@mui/material';
+import { FC } from 'react';
 import ProfilePic from '../../../assets/Images/ProfilePicture.jpeg';
 import styles from './Profile.module.scss';
-// import { faInfo } from '@fortawesome/free-solid-svg-icons/faInfo';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-const Profile = () => {
+const Profile: FC = () => {
   return (
-    <div className={styles.profile}>
-      <img src={ProfilePic} alt="profile_pic" className={styles.profile__pic} />
-      <div className={styles.profile_about}>
-        <p className={styles.profile_about__name}>Rahul Yella Reddy</p>
-        <p className={styles.profile_about__line}>
-          I'm front-end Deverloper based on Banglore,India.
-        </p>
-      </div>
-      {/* <div className={styles.profile_social_network}>
-        <Button>gitHub</Button>
-        <Button
-          variant="contained"
-          startIcon={<FontAwesomeIcon icon={faInfo} />}
-        >
-          Example
-        </Button>
-      </div> */}
-    </div>
+    <Grid container>
+      <Grid item xs={6} sm={4} md={3} lg={3} sx={{ textAlign: 'center' }}>
+        <img
+          src={ProfilePic}
+          alt="profile_pic"
+          className={styles.profile__pic}
+        />
+      </Grid>
+      <Grid item xs={6} sm={8} md={9} lg={9}>
+        <Grid container>
+          <Grid item xs={12} sm={8} md={6} lg={6}>
+            <Typography variant="body1">Rahul Yella Reddy</Typography>
+            <Typography variant="body2">
+              I'm front-end Deverloper based on Banglore,India.
+            </Typography>
+          </Grid>
+          <Grid item container xs={12} sm={4} md={6} lg={6} spacing={0.5}>
+            <Grid item>
+              <Button
+                variant="contained"
+                aria-label="Github"
+                startIcon={<GitHubIcon />}
+              >
+                GitHub
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                variant="contained"
+                aria-label="LinkedIn"
+                startIcon={<LinkedInIcon />}
+              >
+                LinkedIn
+              </Button>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 };
 
